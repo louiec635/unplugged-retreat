@@ -88,7 +88,7 @@ textarea {
    ========================================================================== */
    /* General Styles */
 
-   html {
+  html {
     font-size: 16px;
   }
   
@@ -129,11 +129,11 @@ textarea {
   }
 
   img {
-
+    width: 100%;
   }
 
   figure {
-
+    margin: 0;
   }
 
   address {
@@ -169,6 +169,14 @@ textarea {
     flex-flow: row wrap;
   }
   
+  header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
   .header-divider {
   background: #3a3a3a; 
   height: 1px;
@@ -236,6 +244,10 @@ textarea {
   /* Hero Area */
   
   .hero-area {
+    background: url('../img/unplugged-retreat-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -287,6 +299,10 @@ textarea {
   /* Features */
   
   .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -521,6 +537,9 @@ textarea {
     }
     /* Hero Area */
     
+    .hero-area {
+      min-height: 600px;
+    }
     .hero-area h1 {
       font-size: 3em;
       line-height: 1;
@@ -569,9 +588,10 @@ textarea {
       width: 85%;
     }
 
-    .reviews article div {
-      width: 49%;
-    }
+  .reviews article figure,
+  .reviews article div {
+    width: 49%;
+  }
   
     .reviews h3 {
       width: 75%;
@@ -688,7 +708,7 @@ textarea {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 80%;
 }
 
   /* Aside */
@@ -717,12 +737,11 @@ textarea {
   
   /* Reviews */
 
-  .reviews h2 {
-    padding-bottom: 50px; 
-  }
-  
   .reviews article div {
     width: 42%;
+  }
+  .reviews h2 {
+    padding-bottom: 50px; 
   }
 
   footer h4 {
@@ -748,6 +767,7 @@ textarea {
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
   .faq h2 {
