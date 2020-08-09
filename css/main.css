@@ -102,6 +102,8 @@ textarea {
   ul,
   ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   a {
@@ -113,6 +115,7 @@ textarea {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
+    margin: 0;
   }
 
   h3,
@@ -199,7 +202,7 @@ textarea {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 0;
+  
   }
 
   header nav ul li {
@@ -256,6 +259,7 @@ textarea {
     background-size: cover;
     background-position: center;
     background-color: #333;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -428,6 +432,9 @@ textarea {
   
   .faq-content {
     margin-bottom: 50px;
+  }
+
+  .faq-content h4 {
     line-height: 1.333;
   }
 
@@ -606,6 +613,10 @@ textarea {
     .features .features-item-description {
       width: 62%;
     }
+
+    .features i {
+      margin-bottom: 30px;
+    }
   
     /* Reviews */
     .reviews article {
@@ -613,7 +624,7 @@ textarea {
       justify-content: space-between;
     }
   
-    .reviews article div {
+    .reviews h2 {
       width: 85%;
     }
 
